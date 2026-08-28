@@ -67,7 +67,90 @@
       </table>
 </main>
 </header>
+<form action="#" method="post">
 
+  <div>
+  <h2>Recommend a Place!</h2>
+    <label for="place-name">Place Name:</label>
+    <input 
+      type="text" 
+      id="place-name" 
+      name="place_name" 
+      required
+    >
+  </div>
+
+
+  <fieldset>
+    <legend>Category</legend>
+
+    <div>
+      <input type="radio" id="food" name="category" value="food" checked>
+      <label for="food">Food & Drink</label>
+    </div>
+
+    <div>
+      <input type="radio" id="study" name="category" value="study_spot">
+      <label for="study">Study Spot</label>
+    </div>
+
+    <div>
+      <input type="radio" id="outdoors" name="category" value="outdoors">
+      <label for="outdoors">Outdoors</label>
+    </div>
+  </fieldset>
+
+
+  <fieldset>
+    <legend>What's good about it?</legend>
+
+    <div>
+      <input type="checkbox" id="affordable" name="highlights" value="affordable">
+      <label for="affordable">Affordable</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="wifi" name="highlights" value="good_wifi">
+      <label for="wifi">Good Wi-Fi</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="quiet" name="highlights" value="quiet">
+      <label for="quiet">Quiet</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="scenic" name="highlights" value="scenic_view">
+      <label for="scenic">Great View</label>
+    </div>
+
+    <div>
+    <label for="place-name">Other Reasons:</label>
+    <input 
+      type="text" 
+      id="other-reasons" 
+       name="other_reasons" 
+      
+    >
+  </div>
+
+      
+    </div>
+  </fieldset>
+
+
+  <div>
+    <label for="contact-email">Contact Email:</label>
+    <input 
+      type="email" 
+      id="contact-email" 
+      name="contact_email" 
+      required
+    >
+  </div>
+
+  <button type="submit">Submit Place</button>
+</form>
 <hr>
 <footer>
     <p>&copy; 2026 Skyline Cafes in Rizal. All rights reserved.</p>
