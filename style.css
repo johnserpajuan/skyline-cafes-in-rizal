@@ -254,3 +254,54 @@ button[type="submit"]:hover {
   margin-bottom: 15px;
   line-height: 1.6;
 }
+
+.place-card,
+.product-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  border-left: 5px solid var(--brand-color);
+  margin-bottom: 20px;
+}
+
+fieldset {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #634308;
+  padding: 0 6px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: var(--brand-color);
+  color: #634308;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: 3px solid var(--brand-color);
+  outline-offset: 2px;
+}
