@@ -1,162 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>          
+<head>         
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ArtSector Gallery & Chimney Cafe 360</title>
+  <link rel="stylesheet" href="../style.css"> 
 </head>
 
 <body>
-<header>
-  <h1><font color="black">🍽 ArtSector Gallery & Chimney Cafe 360</font></h1>
-  <nav>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../about.html">About the Owner</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-  </ul>
-  </nav>
-  <hr>
+  <header>
+    <h1>🍽 ArtSector Gallery & Chimney Cafe 360</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-<table>
-        <tr>
-          <td valign="top">
-            <img src="../artsector.jpg" width="400" alt="An image of ArtSector Gallery & Chimney Cafe 360">
-          </td>
-          <td valign="top">
-          <h3><font color="blue"><a href="https://www.facebook.com/artsectorph/" target="_blank">🍽 Visit on Facebook</a></font></h3>
-          <h3><font color="blue"><a href="https://booky.ph/biz/artsector-gallery-chimney-cafe-tayuman/menu/" target="_blank">🍽 Check their Menu</a></font></h3>
-    
-<table>
-<tr>
-    <th>Address</th>
-    <th>Price Range</th>
-    <th>Operating Hours</th>
-</tr>
-<tr>
-    <td>84 Asuncion Avenue Binangonan Calabarzon</td>
-    <td><center>P500-P1000</center></td>
-    <td>Closed on Mondays <font color="green">⋮</font> Tue-Sun: 12:00 PM to 9:30 PM</td>
-</tr>
-<tr>
-    <th>NOTE:
-</tr>
-<tr>
-    <td>☆ <i> They operate strictly on a <strong>walk-in, first-come, first-served basis.</strong>
-    <br><br> ☆  <i> There is a standard entrance fee of <strong>₱200 per person.</strong>
-      <br> On public holidays, the entrance fee increases to <strong>₱225 per person</i></P></td>
-</tr>
-<tr>
-    <th>☆ Why I Recommend It:</th>
-</tr>
-<tr>
-    <td>☆ <i>Unique gallery setting with a cozy café atmosphere and <strong>stunning views.</i></td>
+  <main>
+    <article class="product-card">
+      <div class="place-details">
+        <img src="../artsector.jpg" alt="An image of ArtSector Gallery & Chimney Cafe 360" class="place-image">
+        
+        <div class="place-links">
+          <p><a href="https://www.facebook.com/artsectorph/" target="_blank">🍽 Visit on Facebook</a></p>
+          <p><a href="https://booky.ph/biz/artsector-gallery-chimney-cafe-tayuman/menu/" target="_blank">🍽 Check their Menu</a></p>
+        </div>
 
+        <table class="info-table">
+          <tr>
+            <th>Address</th>
+            <td>84 Asuncion Avenue, Binangonan, Calabarzon</td>
+          </tr>
+          <tr>
+            <th>Price Range</th>
+            <td>₱500 - ₱1000</td>
+          </tr>
+          <tr>
+            <th>Operating Hours</th>
+            <td>Closed on Mondays | Tue-Sun: 12:00 PM to 9:30 PM</td>
+          </tr>
+        </table>
 
-</tr>
+        <div class="notes-section">
+          <h3>☆ Important Notes:</h3>
+          <ul>
+            <li>They operate strictly on a <strong>walk-in, first-come, first-served basis.</strong></li>
+            <li>There is a standard entrance fee of <strong>₱200 per person</strong> (₱225 on public holidays).</li>
+          </ul>
 
+          <h3>☆ Why I Recommend It:</h3>
+          <p><i>Unique gallery setting with a cozy café atmosphere and <strong>stunning views.</strong></i></p>
+        </div>
+      </div>
+    </article>
 
+    <form action="#" method="post" class="recommend-form">
+      <h2>Recommend a Place!</h2>
 
+      <div class="form-group">
+        <label for="place-name">Place Name:</label>
+        <input type="text" id="place-name" name="place_name" required>
+      </div>
 
+      <fieldset>
+        <legend>Category</legend>
+        <div>
+          <input type="radio" id="food" name="category" value="food" checked>
+          <label for="food">Food & Drink</label>
+        </div>
+        <div>
+          <input type="radio" id="study" name="category" value="study_spot">
+          <label for="study">Study Spot</label>
+        </div>
+        <div>
+          <input type="radio" id="outdoors" name="category" value="outdoors">
+          <label for="outdoors">Outdoors</label>
+        </div>
+      </fieldset>
 
-</tr>
-</table>
-          
-          <ul class="specs-list">
-          </td>
-        </tr>
-      </table>
-</main>
-</header>
-<form action="#" method="post">
+      <fieldset>
+        <legend>What's good about it?</legend>
+        <div>
+          <input type="checkbox" id="affordable" name="highlights" value="affordable">
+          <label for="affordable">Affordable</label>
+        </div>
+        <div>
+          <input type="checkbox" id="wifi" name="highlights" value="good_wifi">
+          <label for="wifi">Good Wi-Fi</label>
+        </div>
+        <div>
+          <input type="checkbox" id="quiet" name="highlights" value="quiet">
+          <label for="quiet">Quiet</label>
+        </div>
+        <div>
+          <input type="checkbox" id="scenic" name="highlights" value="scenic_view">
+          <label for="scenic">Great View</label>
+        </div>
 
-  <div>
-  <h2>Recommend a Place!</h2>
-    <label for="place-name">Place Name:</label>
-    <input 
-      type="text" 
-      id="place-name" 
-      name="place_name" 
-      required
-    >
-  </div>
+        <div class="form-group">
+          <label for="other-reasons">Other Reasons:</label>
+          <input type="text" id="other-reasons" name="other_reasons">
+        </div>
+      </fieldset>
 
+      <div class="form-group">
+        <label for="contact-email">Contact Email:</label>
+        <input type="email" id="contact-email" name="contact_email" required>
+      </div>
 
-  <fieldset>
-    <legend>Category</legend>
+      <button type="submit">Submit Place</button>
+    </form>
+  </main>
 
-    <div>
-      <input type="radio" id="food" name="category" value="food" checked>
-      <label for="food">Food & Drink</label>
-    </div>
-
-    <div>
-      <input type="radio" id="study" name="category" value="study_spot">
-      <label for="study">Study Spot</label>
-    </div>
-
-    <div>
-      <input type="radio" id="outdoors" name="category" value="outdoors">
-      <label for="outdoors">Outdoors</label>
-    </div>
-  </fieldset>
-
-
-  <fieldset>
-    <legend>What's good about it?</legend>
-
-    <div>
-      <input type="checkbox" id="affordable" name="highlights" value="affordable">
-      <label for="affordable">Affordable</label>
-    </div>
-
-    <div>
-      <input type="checkbox" id="wifi" name="highlights" value="good_wifi">
-      <label for="wifi">Good Wi-Fi</label>
-    </div>
-
-    <div>
-      <input type="checkbox" id="quiet" name="highlights" value="quiet">
-      <label for="quiet">Quiet</label>
-    </div>
-
-    <div>
-      <input type="checkbox" id="scenic" name="highlights" value="scenic_view">
-      <label for="scenic">Great View</label>
-    </div>
-
-    <div>
-    <label for="place-name">Other Reasons:</label>
-    <input 
-      type="text" 
-      id="other-reasons" 
-       name="other_reasons" 
-      
-    >
-  </div>
-
-      
-    </div>
-  </fieldset>
-
-
-  <div>
-    <label for="contact-email">Contact Email:</label>
-    <input 
-      type="email" 
-      id="contact-email" 
-      name="contact_email" 
-      required
-    >
-  </div>
-
-  <button type="submit">Submit Place</button>
-</form>
-<hr>
-<footer>
+  <footer>
     <p>&copy; 2026 Skyline Cafes in Rizal. All rights reserved.</p>
-</footer>
-
+  </footer>
 </body>
 </html>

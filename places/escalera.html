@@ -1,162 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>          
+<head>         
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escalera Cafe</title>
+  <link rel="stylesheet" href="../style.css"> 
 </head>
 
 <body>
-<header>
-  <h1><font color="black">🍽 Escalera Cafe</font></h1>
-  <nav>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../about.html">About the Owner</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-  </ul>
-  </nav>
-  <hr>
+  <header>
+    <h1>🍽 Escalera Cafe</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-<table>
-        <tr>
-          <td valign="top">
-            <img src="../escalera.jpg" width="400" alt="An image of Escalera Cafe">
-          </td>
-          <td valign="top">
-          <h3><font color="blue"><a href="https://www.facebook.com/EscaleraCafe/" target="_blank">🍽 Visit on Facebook</a></font></h3>
-          <h3><font color="blue"><a href="https://menuph.com/escalera-cafe-menu/" target="_blank">🍽 Check their Menu</a></font></h3>
-    
-<table>
-<tr>
-    <th>Address</th>
-    <th>Price Range</th>
-    <th>Operating Hours</th>
-</tr>
-<tr>
-    <td>84 A Lot 3 Pelican Cliff Eastridge Executive Village 1940 Binangonan Calabarzon</td>
-    <td><center>P400-P1000</center></td>
-    <td>Mon-Fri: 4:00 PM to 2:00 AM <font color="green">⋮</font> Sat-Sun: 11:00 AM to 2:00 AM</td>
-</tr>
-<tr>
-    <th>NOTE:
-</tr>
-<tr>
-    <td>☆ <i> There is a subdivision fee that costs</i><strong> ₱100 for cars </strong>and <strong>₱50 for motorcycles</strong>
-    <br><br> ☆  <i> They operate on a <strong>first-come, first-served walk in basis.</strong> However, they do occasionally 
-    <br>accept <strong>advance event inquiries and private reservations</strong> depending on capacity. </i></P></td>
-</tr>
-<tr>
-    <th>☆ Why I Recommend It:</th>
-</tr>
-<tr>
-    <td>☆ <i>Great location, amazing coffee, and a perfect view of the city skyline.</i></td>
+  <main>
+    <article class="product-card">
+      <div class="place-details">
+        <img src="../escalera.jpg" alt="An image of Escalera Cafe" class="place-image">
+        
+        <div class="place-links">
+          <p><a href="https://www.facebook.com/EscaleraCafe/" target="_blank">🍽 Visit on Facebook</a></p>
+          <p><a href="https://menuph.com/escalera-cafe-menu/" target="_blank">🍽 Check their Menu</a></p>
+        </div>
 
+        <table class="info-table">
+          <tr>
+            <th>Address</th>
+            <td>Lot 3 Pelican Cliff, Eastridge Executive Village, Binangonan, Calabarzon</td>
+          </tr>
+          <tr>
+            <th>Price Range</th>
+            <td>₱400 - ₱1000</td>
+          </tr>
+          <tr>
+            <th>Operating Hours</th>
+            <td>Mon-Fri: 4:00 PM to 2:00 AM | Sat-Sun: 11:00 AM to 2:00 AM</td>
+          </tr>
+        </table>
 
-</tr>
+        <div class="notes-section">
+          <h3>☆ Important Notes:</h3>
+          <ul>
+            <li>There is a subdivision entrance fee of <strong>₱100 for cars</strong> and <strong>₱50 for motorcycles</strong>.</li>
+            <li>They operate on a <strong>first-come, first-served walk-in basis</strong>, but occasionally accept private reservations depending on capacity.</li>
+          </ul>
 
+          <h3>☆ Why I Recommend It:</h3>
+          <p><i>Great location, amazing coffee, and a perfect view of the city skyline.</i></p>
+        </div>
+      </div>
+    </article>
 
+    <form action="#" method="post" class="recommend-form">
+      <h2>Recommend a Place!</h2>
 
+      <div class="form-group">
+        <label for="place-name">Place Name:</label>
+        <input type="text" id="place-name" name="place_name" required>
+      </div>
 
+      <fieldset>
+        <legend>Category</legend>
+        <div>
+          <input type="radio" id="food" name="category" value="food" checked>
+          <label for="food">Food & Drink</label>
+        </div>
+        <div>
+          <input type="radio" id="study" name="category" value="study_spot">
+          <label for="study">Study Spot</label>
+        </div>
+        <div>
+          <input type="radio" id="outdoors" name="category" value="outdoors">
+          <label for="outdoors">Outdoors</label>
+        </div>
+      </fieldset>
 
-</tr>
-</table>
-          
-          <ul class="specs-list">
-          </td>
-        </tr>
-      </table>
-</main>
-</header>
-<form action="#" method="post">
+      <fieldset>
+        <legend>What's good about it?</legend>
+        <div>
+          <input type="checkbox" id="affordable" name="highlights" value="affordable">
+          <label for="affordable">Affordable</label>
+        </div>
+        <div>
+          <input type="checkbox" id="wifi" name="highlights" value="good_wifi">
+          <label for="wifi">Good Wi-Fi</label>
+        </div>
+        <div>
+          <input type="checkbox" id="quiet" name="highlights" value="quiet">
+          <label for="quiet">Quiet</label>
+        </div>
+        <div>
+          <input type="checkbox" id="scenic" name="highlights" value="scenic_view">
+          <label for="scenic">Great View</label>
+        </div>
 
-  <div>
-  <h2>Recommend a Place!</h2>
-    <label for="place-name">Place Name:</label>
-    <input 
-      type="text" 
-      id="place-name" 
-      name="place_name" 
-      required
-    >
-  </div>
+        <div class="form-group">
+          <label for="other-reasons">Other Reasons:</label>
+          <input type="text" id="other-reasons" name="other_reasons">
+        </div>
+      </fieldset>
 
+      <div class="form-group">
+        <label for="contact-email">Contact Email:</label>
+        <input type="email" id="contact-email" name="contact_email" required>
+      </div>
 
-  <fieldset>
-    <legend>Category</legend>
+      <button type="submit">Submit Place</button>
+    </form>
+  </main>
 
-    <div>
-      <input type="radio" id="food" name="category" value="food" checked>
-      <label for="food">Food & Drink</label>
-    </div>
-
-    <div>
-      <input type="radio" id="study" name="category" value="study_spot">
-      <label for="study">Study Spot</label>
-    </div>
-
-    <div>
-      <input type="radio" id="outdoors" name="category" value="outdoors">
-      <label for="outdoors">Outdoors</label>
-    </div>
-  </fieldset>
-
-
-  <fieldset>
-    <legend>What's good about it?</legend>
-
-    <div>
-      <input type="checkbox" id="affordable" name="highlights" value="affordable">
-      <label for="affordable">Affordable</label>
-    </div>
-
-    <div>
-      <input type="checkbox" id="wifi" name="highlights" value="good_wifi">
-      <label for="wifi">Good Wi-Fi</label>
-    </div>
-
-    <div>
-      <input type="checkbox" id="quiet" name="highlights" value="quiet">
-      <label for="quiet">Quiet</label>
-    </div>
-
-    <div>
-      <input type="checkbox" id="scenic" name="highlights" value="scenic_view">
-      <label for="scenic">Great View</label>
-    </div>
-
-    <div>
-    <label for="place-name">Other Reasons:</label>
-    <input 
-      type="text" 
-      id="other-reasons" 
-       name="other_reasons" 
-      
-    >
-  </div>
-
-      
-    </div>
-  </fieldset>
-
-
-  <div>
-    <label for="contact-email">Contact Email:</label>
-    <input 
-      type="email" 
-      id="contact-email" 
-      name="contact_email" 
-      required
-    >
-  </div>
-
-  <button type="submit">Submit Place</button>
-</form>
-<hr>
-<footer>
+  <footer>
     <p>&copy; 2026 Skyline Cafes in Rizal. All rights reserved.</p>
-</footer>
-
+  </footer>
 </body>
 </html>

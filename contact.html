@@ -1,57 +1,73 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Contact</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-    <h1>Contact me:</h1>
-    <nav> 
-<hr>  
-    <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About the Owner</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  </nav>
-</header>  
-<hr>
-<main>
-<p><font color="red">GMAIL:</font><Strong> johnpaul.serpajuan@tup.edu.ph</Strong></p>
-<p><font color="blue">FACEBOOK:</font><Strong> John Paul Serpa Juan <a href="https://www.facebook.com/iixjhn" target="_blank">Visit Profile</a></Strong></p>
-<p><font color="pink">INSTAGRAM:</font><Strong> @jjohn_333 <a href="https://www.instagram.com/jjohn_333/" target="_blank">Visit Profile</a></Strong></p>
-<p><font color="green">PHONE:</font><Strong> +63 967 098 9505</Strong></p>
-<P>---------->⩊<.ᐟ----------ᶻ 𝗓 𐰁 .ᐟ</P>
-</main>
-<hr>
-<form>
-<fieldset>
-  <legend>Your details</legend>
-  <label for="name">Name</label>
-  <input type="text" id="name" name="name" required>
-  <br><br>
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" required>
-  <br><br>
-  <label for="Subject">Subject</label>
-  <select id="Options" name="Options" required>
-    <option value="">Select a subject</option>
-    <option value="Recommend a Cafe">Recommend a Cafe</option>
-    <option value="Feature your Cafe">Feature your Cafe</option>
-    <option value="Correction/Content Update">Correction/Content Update</option>
-    <option value="General Assistance">Assistance</option>
-  </select>
-  <br><br>    
-  <label for="message">Message</label>
-  <textarea id="message" placeholder="Enter message here" name="message" rows="6" required></textarea>
-  <br><br>
-  <button type="submit" value="Submit">Submit</button>
-</fieldset>
-</form>
-<footer>
+  <header>
+    <h1>Contact</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>  
+
+  <main>
+    <article class="product-card">
+      <h2>Get in Touch</h2>
+      <ul class="contact-list">
+        <li><strong>Gmail:</strong> johnpaul.serpajuan@tup.edu.ph</li>
+        <li><strong>Facebook:</strong> John Paul Serpa Juan — <a href="https://www.facebook.com/iixjhn" target="_blank">Visit Profile</a></li>
+        <li><strong>Instagram:</strong> @jjohn_333 — <a href="https://www.instagram.com/jjohn_333/" target="_blank">Visit Profile</a></li>
+        <li><strong>Phone:</strong> +63 967 098 9505</li>
+      </ul>
+    </article>
+
+    <form class="recommend-form">
+      <fieldset>
+        <legend>Your Details</legend>
+        
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <select id="subject" name="subject" required>
+            <option value="">Select a subject</option>
+            <option value="Recommend a Cafe">Recommend a Cafe</option>
+            <option value="Feature your Cafe">Feature your Cafe</option>
+            <option value="Correction/Content Update">Correction/Content Update</option>
+            <option value="General Assistance">Assistance</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="6" placeholder="Enter message here" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
     <p>&copy; 2026 Skyline Cafes in Rizal. All rights reserved.</p>
-</footer>
+  </footer>
 </body> 
 </html>
